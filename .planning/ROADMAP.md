@@ -78,11 +78,10 @@ Plans:
   3. Polish Skill loads expression patterns on-demand and applies journal-specific style rules when a target journal is specified
   4. The redesigned flow replaces the existing rigid 6-step SKILL.md entirely
   5. Skill handles both full-paper and section-level polishing gracefully
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md — Author and validate the Polish Skill SKILL.md
 
 ### Phase 5: De-AI Skill
 **Goal**: Users can detect and rewrite AI-generated patterns in their text to reduce detection scores while preserving academic quality
@@ -182,7 +181,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 1. Reference Libraries | 2/2 | Complete | 2026-03-11 |
 | 2. Skill Conventions | 1/1 | Complete | 2026-03-11 |
 | 3. Translation Skill | 0/1 | Not started | - |
-| 4. Polish Skill | 0/2 | Not started | - |
+| 4. Polish Skill | 0/1 | Not started | - |
 | 5. De-AI Skill | 0/1 | Not started | - |
 | 6. Reviewer Simulation Skill | 0/1 | Not started | - |
 | 7. Abstract and Experiment Skills | 0/2 | Not started | - |
