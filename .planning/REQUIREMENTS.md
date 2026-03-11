@@ -17,7 +17,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Core Skills (CORE)
 
 - [x] **CORE-01**: Chinese-to-English translation Skill accepts Chinese draft and outputs polished English academic text in LaTeX format
-- [ ] **CORE-02**: English polishing Skill with flexible flow supporting both quick-fix mode (direct polish) and guided mode (structure → logic → expression)
+- [x] **CORE-02**: English polishing Skill with flexible flow supporting both quick-fix mode (direct polish) and guided mode (structure → logic → expression)
 - [ ] **CORE-03**: De-AI Skill detects AI-generated patterns and rewrites text to reduce detection scores while maintaining academic quality
 - [ ] **CORE-04**: Reviewer simulation Skill reviews paper from reviewer perspective, identifies weaknesses, and provides actionable improvement suggestions
 
@@ -81,7 +81,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FNDN-03 | Phase 1: Reference Libraries | Complete |
 | FNDN-04 | Phase 2: Skill Conventions | Complete |
 | CORE-01 | Phase 3: Translation Skill | Complete |
-| CORE-02 | Phase 4: Polish Skill | Pending |
+| CORE-02 | Phase 4: Polish Skill | Complete |
 | CORE-03 | Phase 5: De-AI Skill | Pending |
 | CORE-04 | Phase 6: Reviewer Simulation Skill | Pending |
 | SECT-01 | Phase 7: Abstract and Experiment Skills | Pending |
