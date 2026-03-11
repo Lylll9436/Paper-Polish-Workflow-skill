@@ -63,10 +63,10 @@ Plans:
   2. Translation preserves technical terminology accurately and uses expression patterns from the shared reference library
   3. Output follows CEUS journal style when the user specifies CEUS as target journal
   4. Skill follows the conventions established in Phase 2 (YAML frontmatter, under 300 lines, progressive disclosure)
-**Plans**: TBD
+**Plans**: 1 planned
 
 Plans:
-- [ ] 03-01: TBD
+- [ ] 03-01-PLAN.md — Author and validate the Translation Skill SKILL.md
 
 ### Phase 4: Polish Skill
 **Goal**: Users can polish English academic text through a flexible workflow that adapts to their needs (quick fix or guided multi-pass)
@@ -189,6 +189,3 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 8. Figure/Table and Logic Skills | 0/2 | Not started | - |
 | 9. Literature and Support Skills | 0/3 | Not started | - |
 | 10. Documentation | 0/1 | Not started | - |
-
-
-
