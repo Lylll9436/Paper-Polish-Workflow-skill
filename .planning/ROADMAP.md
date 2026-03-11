@@ -92,10 +92,10 @@ Plans:
   2. Skill rewrites flagged passages using alternatives from the anti-AI patterns reference library
   3. Rewritten text maintains academic quality and meaning (not just synonym substitution)
   4. User can review before/after comparison of each rewritten passage
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 05-01: TBD
+- [ ] 05-01-PLAN.md -- Author and validate the De-AI Skill SKILL.md— Author and validate the De-AI Skill SKILL.md
 
 ### Phase 6: Reviewer Simulation Skill
 **Goal**: Users can get a simulated peer review of their paper that identifies weaknesses and provides actionable improvement suggestions
@@ -106,7 +106,7 @@ Plans:
   2. Each identified weakness comes with a specific, actionable improvement suggestion (not just "this needs improvement")
   3. Review output follows conventions of real journal reviews (major concerns, minor concerns, questions for authors)
   4. Skill can target review criteria to a specific journal when specified (e.g., CEUS relevance criteria)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 06-01: TBD
@@ -120,7 +120,7 @@ Plans:
   2. Abstract Skill can optimize an existing abstract by restructuring it to the formula while preserving content
   3. Experiment analysis Skill accepts result data (tables, statistics) and identifies significant patterns and trends
   4. Experiment analysis Skill generates discussion paragraphs that connect findings to research questions and existing literature
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 07-01: TBD
@@ -135,7 +135,7 @@ Plans:
   2. Captions follow target journal formatting requirements when a journal template is specified
   3. Logic verification Skill traces argument chains across sections and identifies gaps, contradictions, or unsupported claims
   4. Logic verification output provides specific section/paragraph references for each identified issue
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 08-01: TBD
@@ -150,7 +150,7 @@ Plans:
   2. Literature Skill handles MCP unavailability gracefully (clear error message, fallback guidance)
   3. Cover letter Skill generates submission-ready letters based on paper content and target journal requirements
   4. Visualization Skill recommends chart types for experimental data with geography-specific options (choropleth maps, spatial scatter plots, hot spot maps)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 09-01: TBD
@@ -166,7 +166,7 @@ Plans:
   2. README includes a complete Skill inventory table with name, trigger command, and one-line description for each Skill
   3. README provides a quick start guide showing a real workflow (e.g., translate -> polish -> de-AI -> review)
   4. README is bilingual (English and Chinese sections)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 10-01: TBD
