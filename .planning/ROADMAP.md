@@ -12,7 +12,7 @@ This roadmap delivers a complete academic writing AI tool suite as Claude Code S
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Reference Libraries** - Build shared expression patterns, anti-AI patterns, and CEUS journal template
+- [x] **Phase 1: Reference Libraries** - Build shared expression patterns, anti-AI patterns, and CEUS journal template
 - [ ] **Phase 2: Skill Conventions** - Establish Skill template pattern, YAML frontmatter format, and progressive disclosure rules
 - [ ] **Phase 3: Translation Skill** - Chinese-to-English academic translation with LaTeX output
 - [ ] **Phase 4: Polish Skill** - Redesigned English polishing with flexible guided and quick-fix modes
@@ -37,8 +37,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 planned
 
 Plans:
-- [ ] 01-01: Restructure expression references for on-demand loading
-- [ ] 01-02: Build CEUS and anti-AI reference contracts
+- [x] 01-01: Restructure expression references for on-demand loading
+- [x] 01-02: Build CEUS and anti-AI reference contracts
 
 ### Phase 2: Skill Conventions
 **Goal**: A documented Skill template pattern exists that all subsequent Skills follow, ensuring consistency across the entire suite
@@ -179,7 +179,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Reference Libraries | 0/2 | Not started | - |
+| 1. Reference Libraries | 2/2 | Complete | 2026-03-11 |
 | 2. Skill Conventions | 0/1 | Not started | - |
 | 3. Translation Skill | 0/1 | Not started | - |
 | 4. Polish Skill | 0/2 | Not started | - |
@@ -189,4 +189,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 8. Figure/Table and Logic Skills | 0/2 | Not started | - |
 | 9. Literature and Support Skills | 0/3 | Not started | - |
 | 10. Documentation | 0/1 | Not started | - |
+
 
