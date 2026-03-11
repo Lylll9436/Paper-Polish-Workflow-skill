@@ -75,21 +75,33 @@ AI: Writes polished version to file
 | **Step 5** | AI checks repetition and coherence |
 | **Write** | AI presents final version and writes to file |
 
+## Authoring New Skills
+
+All new Skills must follow the project's Skill conventions. Start here:
+
+- [`references/skill-conventions.md`](references/skill-conventions.md): canonical authoring rules (frontmatter contract, modes, fallbacks, line budget)
+- [`references/skill-skeleton.md`](references/skill-skeleton.md): copyable example skeleton to use as a starting point
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed authoring guidance.
+
 ## Shared References
 
-The project now uses stable reference entrypoints plus narrower leaf modules.
+The project uses stable reference entrypoints plus narrower leaf modules.
 
 ### Stable Entry Points
 
 - [`references/expression-patterns.md`](references/expression-patterns.md): overview and module map for academic expression patterns
 - [`references/anti-ai-patterns.md`](references/anti-ai-patterns.md): overview and risk model for anti-AI rewriting
 - [`references/journals/ceus.md`](references/journals/ceus.md): CEUS journal contract
+- [`references/skill-conventions.md`](references/skill-conventions.md): Skill authoring conventions
+- [`references/skill-skeleton.md`](references/skill-skeleton.md): copyable Skill template
 
 ### Why this structure?
 
 - Skills can keep using stable top-level paths.
 - Longer workflows can load only the relevant leaf module under `references/expression-patterns/` or `references/anti-ai-patterns/`.
 - Future journal templates can follow the same stable `references/journals/[journal].md` contract.
+- New Skills start from the skeleton and follow the conventions, ensuring consistency across the suite.
 
 ## Supported Journals
 
@@ -118,6 +130,8 @@ paper-polish-workflow/
 ├── paper-polish-workflow/
 │   └── SKILL.md
 ├── references/
+│   ├── skill-conventions.md            # Skill authoring conventions
+│   ├── skill-skeleton.md               # Copyable Skill template
 │   ├── expression-patterns.md          # Stable overview entrypoint
 │   ├── expression-patterns/            # Scenario-based expression modules
 │   ├── anti-ai-patterns.md             # Stable anti-AI entrypoint

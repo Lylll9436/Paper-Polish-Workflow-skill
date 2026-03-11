@@ -75,21 +75,33 @@ AI：将润色后的版本写入文件
 | **步骤 5** | AI 检查重复和连贯性 |
 | **写入** | AI 展示最终版本并写入文件 |
 
+## 编写新 Skill
+
+所有新 Skill 必须遵循项目的 Skill 编写规范。从这里开始：
+
+- [`references/skill-conventions.md`](references/skill-conventions.md)：规范化编写规则（前置元数据契约、模式、降级策略、行数预算）
+- [`references/skill-skeleton.md`](references/skill-skeleton.md)：可直接复制的示例骨架
+
+详细的编写指导请参阅 [CONTRIBUTING_CN.md](CONTRIBUTING_CN.md)。
+
 ## 共享参考库
 
-项目现在使用“稳定入口 + 按需叶子模块”的参考库结构。
+项目使用”稳定入口 + 按需叶子模块”的参考库结构。
 
 ### 稳定入口文件
 
 - [`references/expression-patterns.md`](references/expression-patterns.md)：学术表达模式库总览与模块地图
 - [`references/anti-ai-patterns.md`](references/anti-ai-patterns.md)：Anti-AI 风险模型与总览入口
 - [`references/journals/ceus.md`](references/journals/ceus.md)：CEUS 期刊契约
+- [`references/skill-conventions.md`](references/skill-conventions.md)：Skill 编写规范
+- [`references/skill-skeleton.md`](references/skill-skeleton.md)：可复制的 Skill 模板
 
 ### 为什么这样组织？
 
 - Skill 可以继续依赖稳定的顶层路径。
 - 长流程只需加载 `references/expression-patterns/` 或 `references/anti-ai-patterns/` 下的相关叶子模块。
 - 后续新增期刊也能沿用 `references/journals/[journal].md` 的稳定契约。
+- 新 Skill 从骨架模板开始，遵循统一规范，确保整个套件的一致性。
 
 ## 支持的期刊
 
@@ -118,6 +130,8 @@ paper-polish-workflow/
 ├── paper-polish-workflow/
 │   └── SKILL.md
 ├── references/
+│   ├── skill-conventions.md            # Skill 编写规范
+│   ├── skill-skeleton.md               # 可复制的 Skill 模板
 │   ├── expression-patterns.md          # 稳定入口文件
 │   ├── expression-patterns/            # 按场景拆分的表达模块
 │   ├── anti-ai-patterns.md             # 稳定入口文件

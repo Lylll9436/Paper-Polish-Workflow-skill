@@ -6,6 +6,17 @@ Thank you for your interest in contributing to Paper Polish Workflow.
 
 ## How to Contribute
 
+### Creating a New Skill
+
+New Skills must follow the project conventions:
+
+1. Copy [`references/skill-skeleton.md`](references/skill-skeleton.md) into a new directory as `SKILL.md`
+2. Follow the rules in [`references/skill-conventions.md`](references/skill-conventions.md)
+3. Fill in all required frontmatter fields (`name`, `description`, `triggers`, `tools`, `references`, `input_modes`, `output_contract`)
+4. Fill in all required body sections (`Purpose`, `Trigger`, `Modes`, `References`, `Ask Strategy`, `Workflow`, `Output Contract`, `Edge Cases`, `Fallbacks`)
+5. Stay within the ~300 line budget; move reusable content to `references/`
+6. Define fallback behavior for when structured interaction tools are unavailable
+
 ### Adding Journal Contracts
 
 1. Create a new file in `references/journals/`
@@ -54,14 +65,24 @@ Thank you for your interest in contributing to Paper Polish Workflow.
 
 ## SKILL.md Requirements
 
+All Skills must follow the [Skill conventions](references/skill-conventions.md). Use the [skill-skeleton.md](references/skill-skeleton.md) as your starting point.
+
 ### Frontmatter (Required)
 
-Every `SKILL.md` must have YAML frontmatter:
+Every `SKILL.md` must have YAML frontmatter with these required fields:
 
 ```yaml
 ---
 name: skill-name
 description: Brief description with trigger keywords
+triggers:
+  primary_intent: what the skill does
+  examples: ["English phrase", "Chinese phrase"]
+tools: [Read, Write]
+references:
+  required: [references/expression-patterns.md]
+input_modes: [file, pasted_text]
+output_contract: [polished_english]
 ---
 ```
 
@@ -69,6 +90,8 @@ description: Brief description with trigger keywords
 - `name`: max 64 chars, pattern `^[a-z0-9]+(-[a-z0-9]+)*$`
 - `description`: max 1024 chars, include trigger keywords
 - `name` must match the parent directory name
+- `tools` lists capability categories, not vendor-specific tool names
+- See [skill-conventions.md](references/skill-conventions.md) for the full field reference
 
 ## Pull Request Process
 
