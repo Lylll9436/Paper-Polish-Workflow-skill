@@ -1,8 +1,8 @@
-# Geography and Urban-Science Patterns
+# Geography and Urban-Science  module is designed to be read on its own.
 
-Domain-specific phrasing for geography, GIS, urban studies, planning, and spatial evidence reporting.
+ module is designed to be read on its own.
 
-## Domain-Specific Patterns
+## Domain-Specific  module is designed to be read on its own.
 
 | Scenario | Expression | 中文说明 |
 |----------|------------|----------|
@@ -37,7 +37,7 @@ Domain-specific phrasing for geography, GIS, urban studies, planning, and spatia
 - 用于把纯方法或模型结果翻译成城市规划和空间分析语言。
 - 用于跨城市、跨尺度、跨社区比较时的表达统一。
 
-## Bilingual Example Patterns
+## Bilingual Example  module is designed to be read on its own.
 
 | 中文意图 | English Pattern | Example |
 |----------|-----------------|---------|
@@ -48,3 +48,4 @@ Domain-specific phrasing for geography, GIS, urban studies, planning, and spatia
 ---
 
 *Module: geography-domain*
+

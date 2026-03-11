@@ -49,6 +49,12 @@ All leaf modules should keep these headings so future Skills can target them pre
 | Describe evidence | `The results show that ...` | 先说结果，再补统计量或比较对象 |
 | Calibrate a claim | `These findings suggest that ...` | 用于避免过度结论化表达 |
 
+## Independent Loading Notes
+
+- Every leaf file should explain its own scope in the opening paragraph.
+- Skills may load a leaf file directly without reading sibling modules first.
+- Overview and leaf filenames should remain stable once downstream Skills start referencing them.
+
 ## Maintenance Rules
 
 - Add new patterns to the most specific leaf file possible.
@@ -59,3 +65,4 @@ All leaf modules should keep these headings so future Skills can target them pre
 
 *Entry point: references/expression-patterns.md*
 *Updated for modular loading: 2026-03-11*
+

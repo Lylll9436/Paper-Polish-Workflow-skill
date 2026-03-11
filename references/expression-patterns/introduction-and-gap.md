@@ -1,6 +1,6 @@
-# Introduction and Gap Patterns
+# Introduction and Gap  module is designed to be read on its own.
 
-Patterns for opening a paper, motivating the problem, reviewing prior work, and introducing the research gap.
+ module is designed to be read on its own.
 
 ## Recommended Expressions
 
@@ -28,7 +28,7 @@ Patterns for opening a paper, motivating the problem, reviewing prior work, and 
 - 写文献综述过渡句时，用于把已有成果和本文定位清楚分开。
 - 写 contribution 段时，用于从 gap 过渡到 method / data / evidence。
 
-## Bilingual Example Patterns
+## Bilingual Example  module is designed to be read on its own.
 
 | 中文意图 | English Pattern | Example |
 |----------|-----------------|---------|
@@ -39,3 +39,4 @@ Patterns for opening a paper, motivating the problem, reviewing prior work, and 
 ---
 
 *Module: introduction-and-gap*
+

@@ -1,6 +1,6 @@
 # Conclusions and Claim Calibration
 
-Patterns for drawing conclusions, stating contributions, discussing implications, and calibrating claim strength.
+ module is designed to be read on its own.
 
 ## Recommended Expressions
 
@@ -28,7 +28,7 @@ Patterns for drawing conclusions, stating contributions, discussing implications
 - discussion 尾段连接政策、规划或方法论启示。
 - future work 段写明确可扩展方向，而不是泛泛而谈。
 
-## Bilingual Example Patterns
+## Bilingual Example  module is designed to be read on its own.
 
 | 中文意图 | English Pattern | Example |
 |----------|-----------------|---------|
@@ -39,3 +39,4 @@ Patterns for drawing conclusions, stating contributions, discussing implications
 ---
 
 *Module: conclusions-and-claims*
+

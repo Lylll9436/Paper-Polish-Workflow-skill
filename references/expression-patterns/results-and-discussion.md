@@ -1,6 +1,6 @@
-# Results and Discussion Patterns
+# Results and Discussion  module is designed to be read on its own.
 
-Patterns for reporting quantitative findings, highlighting comparisons, and moving from evidence to interpretation.
+ module is designed to be read on its own.
 
 ## Recommended Expressions
 
@@ -28,7 +28,7 @@ Patterns for reporting quantitative findings, highlighting comparisons, and movi
 - 讨论段比较不同城市、样本组或实验条件。
 - 讨论局限时，避免把结果说得超出证据范围。
 
-## Bilingual Example Patterns
+## Bilingual Example  module is designed to be read on its own.
 
 | 中文意图 | English Pattern | Example |
 |----------|-----------------|---------|
@@ -39,3 +39,4 @@ Patterns for reporting quantitative findings, highlighting comparisons, and movi
 ---
 
 *Module: results-and-discussion*
+

@@ -1,6 +1,6 @@
-# Methods and Data Patterns
+# Methods and Data  module is designed to be read on its own.
 
-Patterns for describing datasets, study areas, methodology, pipelines, and implementation choices.
+ module is designed to be read on its own.
 
 ## Recommended Expressions
 
@@ -28,7 +28,7 @@ Patterns for describing datasets, study areas, methodology, pipelines, and imple
 - 实验设置里说明 baselines、参数、评价指标和 reproducibility 细节。
 - study area 描述里连接城市背景与研究问题。
 
-## Bilingual Example Patterns
+## Bilingual Example  module is designed to be read on its own.
 
 | 中文意图 | English Pattern | Example |
 |----------|-----------------|---------|
@@ -39,3 +39,4 @@ Patterns for describing datasets, study areas, methodology, pipelines, and imple
 ---
 
 *Module: methods-and-data*
+
