@@ -135,11 +135,11 @@ Plans:
   2. Captions follow target journal formatting requirements when a journal template is specified
   3. Logic verification Skill traces argument chains across sections and identifies gaps, contradictions, or unsupported claims
   4. Logic verification output provides specific section/paragraph references for each identified issue
-**Plans**: 1 plan
+**Plans**: 2 plans
 
 Plans:
-- [ ] 08-01: TBD
-- [ ] 08-02: TBD
+- [ ] 08-01-PLAN.md — Author and validate the Caption Skill SKILL.md (SECT-02)
+- [ ] 08-02-PLAN.md — Author and validate the Logic Verification Skill SKILL.md (SECT-04)
 
 ### Phase 9: Literature and Support Skills
 **Goal**: Users can search literature via Semantic Scholar, generate cover letters, and get visualization recommendations
