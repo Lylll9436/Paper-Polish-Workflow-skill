@@ -18,9 +18,9 @@ tools:
   - Write
   - Structured Interaction
 references:
-  required: []
-  leaf_hints:
+  required:
     - references/journals/ceus.md
+  leaf_hints: []
 input_modes:
   - file
   - pasted_text

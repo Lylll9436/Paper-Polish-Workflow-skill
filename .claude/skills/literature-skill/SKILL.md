@@ -13,7 +13,7 @@ triggers:
     - "Find relevant papers on deep learning for land use classification"
     - "帮我检索相关文献并生成引用格式"
 tools:
-  - Semantic Scholar MCP
+  - External MCP
   - Structured Interaction
 references:
   required: []

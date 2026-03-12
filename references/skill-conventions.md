@@ -70,6 +70,7 @@ Skills must follow the project's stable-entrypoint-plus-leaf-module architecture
 - List all stable entrypoints in frontmatter `references.required`.
 - List likely leaf files in `references.leaf_hints` so maintainers know which narrow modules the Skill expects to use.
 - If a loaded reference does not match the current task, stop and ask the user for clarification rather than silently guessing a fallback.
+- **`required: []` is acceptable** only for self-contained Skills that produce no written academic text and load no local reference files by design. Qualifying cases: pure analysis Skills (e.g., logic checking), pure recommendation Skills (e.g., chart type suggestions), and external-MCP-only Skills (e.g., literature search). The `## References` body section must document why no reference loading is needed.
 
 ### Reference Paths
 
