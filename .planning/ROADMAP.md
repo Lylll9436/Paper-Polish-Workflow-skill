@@ -185,6 +185,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 5. De-AI Skill | 1/1 | Complete | 2026-03-12 |
 | 6. Reviewer Simulation Skill | 0/1 | Not started | - |
 | 7. Abstract and Experiment Skills | 2/2 | Complete   | 2026-03-12 |
-| 8. Figure/Table and Logic Skills | 0/2 | Not started | - |
+| 8. Figure/Table and Logic Skills | 1/2 | In Progress|  |
 | 9. Literature and Support Skills | 0/3 | Not started | - |
 | 10. Documentation | 0/1 | Not started | - |

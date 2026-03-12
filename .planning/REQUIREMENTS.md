@@ -26,7 +26,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SECT-01**: Abstract generation/optimization Skill produces abstracts following the 5-sentence formula (contribution, difficulty, method, evidence, result)
 - [ ] **SECT-02**: Figure and table caption Skill generates or optimizes captions with geography-specific awareness (study area, CRS, legend description)
 - [x] **SECT-03**: Experiment analysis Skill helps analyze results, identify patterns, and generate discussion paragraphs
-- [ ] **SECT-04**: Logic verification Skill checks argument chains, identifies gaps, inconsistencies, and unsupported claims across sections
+- [x] **SECT-04**: Logic verification Skill checks argument chains, identifies gaps, inconsistencies, and unsupported claims across sections
 
 ### Support Skills (SUPP)
 
@@ -87,7 +87,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SECT-01 | Phase 7: Abstract and Experiment Skills | Complete |
 | SECT-02 | Phase 8: Figure/Table and Logic Skills | Pending |
 | SECT-03 | Phase 7: Abstract and Experiment Skills | Complete |
-| SECT-04 | Phase 8: Figure/Table and Logic Skills | Pending |
+| SECT-04 | Phase 8: Figure/Table and Logic Skills | Complete |
 | SUPP-01 | Phase 9: Literature and Support Skills | Pending |
 | SUPP-02 | Phase 9: Literature and Support Skills | Pending |
 | SUPP-03 | Phase 9: Literature and Support Skills | Pending |
