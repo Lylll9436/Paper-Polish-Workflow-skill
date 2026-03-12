@@ -109,7 +109,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 06-01: TBD
+- [ ] 06-01-PLAN.md -- Author and validate the Reviewer Simulation Skill SKILL.md
 
 ### Phase 7: Abstract and Experiment Skills
 **Goal**: Users can generate submission-ready abstracts and transform experiment results into discussion paragraphs
