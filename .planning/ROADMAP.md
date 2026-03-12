@@ -120,11 +120,11 @@ Plans:
   2. Abstract Skill can optimize an existing abstract by restructuring it to the formula while preserving content
   3. Experiment analysis Skill accepts result data (tables, statistics) and identifies significant patterns and trends
   4. Experiment analysis Skill generates discussion paragraphs that connect findings to research questions and existing literature
-**Plans**: 1 plan
+**Plans**: 2 plans
 
 Plans:
-- [ ] 07-01: TBD
-- [ ] 07-02: TBD
+- [ ] 07-01-PLAN.md — Author and validate the Abstract Skill SKILL.md (SECT-01)
+- [ ] 07-02-PLAN.md — Author and validate the Experiment Skill SKILL.md (SECT-03)
 
 ### Phase 8: Figure/Table and Logic Skills
 **Goal**: Users can generate optimized captions for figures/tables and verify logical consistency across paper sections
