@@ -150,12 +150,12 @@ Plans:
   2. Literature Skill handles MCP unavailability gracefully (clear error message, fallback guidance)
   3. Cover letter Skill generates submission-ready letters based on paper content and target journal requirements
   4. Visualization Skill recommends chart types for experimental data with geography-specific options (choropleth maps, spatial scatter plots, hot spot maps)
-**Plans**: 1 plan
+**Plans**: 3 plans
 
 Plans:
-- [ ] 09-01: TBD
-- [ ] 09-02: TBD
-- [ ] 09-03: TBD
+- [ ] 09-01-PLAN.md — Author and validate the Literature Skill SKILL.md (SUPP-02)
+- [ ] 09-02-PLAN.md — Author and validate the Cover Letter Skill SKILL.md (SUPP-01)
+- [ ] 09-03-PLAN.md — Author and validate the Visualization Skill SKILL.md (SUPP-03)
 
 ### Phase 10: Documentation
 **Goal**: The project has a complete bilingual README that enables any user to install and start using the Skill suite
