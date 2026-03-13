@@ -1,11 +1,11 @@
 ---
 gsd_state_version: 1.0
 milestone: v1.0
-milestone_name: milestone
-status: completed
-stopped_at: Completed 10-documentation-10-01-PLAN.md
-last_updated: "2026-03-12T15:57:48.366Z"
-last_activity: 2026-03-12 — Phase 6 executed; reviewer simulation skill created
+milestone_name: Paper Polish Workflow
+status: archived
+stopped_at: v1.0 milestone archived 2026-03-13
+last_updated: "2026-03-13T00:00:00.000Z"
+last_activity: 2026-03-13 — v1.0 milestone archived; 11 Skills shipped, 16/16 requirements satisfied
 progress:
   total_phases: 10
   completed_phases: 10
@@ -18,19 +18,17 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-03-10)
+See: .planning/PROJECT.md (updated 2026-03-13)
 
 **Core value:** Every Skill must produce output that is directly usable in a real paper submission
-**Current focus:** Phase 6: Reviewer Simulation Skill
+**Current focus:** Planning next milestone (run `/gsd:new-milestone`)
 
 ## Current Position
 
-Phase: 6 of 10 (Reviewer Simulation Skill)
-Plan: 1 of 1 in current phase
-Status: Phase 6 complete
-Last activity: 2026-03-12 — Phase 6 executed; reviewer simulation skill created
+Status: v1.0 ARCHIVED — milestone complete
+Last activity: 2026-03-13 — v1.0 milestone archived; 11 Skills shipped, 16/16 requirements satisfied
 
-Progress: [██████████] 100%
+Progress: [██████████] 100% — v1.0 complete
 
 ## Performance Metrics
 
