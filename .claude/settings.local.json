@@ -1,7 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Skill(gsd:execute-phase)",
+      "Skill(gsd:plan-phase)",
+      "Skill(gsd:discuss-phase)",
+      "Bash(node \"$HOME/.claude/get-shit-done/bin/gsd-tools.cjs\" init phase-op 6 2>/dev/null || echo \"INIT_FAILED\")",
+      "WebFetch(domain:iclr.cc)",
+      "WebFetch(domain:plos.org)",
+      "WebFetch(domain:icml.cc)",
+      "Bash(cd \"C:/Users/Lylll/Desktop/paper-polish-workflow\" && sed -i 's/- \\\\[ \\\\] 06-01: TBD/- [ ] 06-01-PLAN.md -- Author and validate the Reviewer Simulation Skill SKILL.md/' .planning/ROADMAP.md)"
     ]
   }
 }
