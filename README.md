@@ -103,6 +103,8 @@ The core writing Skills in this project are adapted from the prompt templates in
 
 Specifically adapted: translation, polish, de-AI, reviewer simulation, abstract, caption, logic verification, experiment analysis, and visualization recommendation. Cover letter and literature search Skills are original extensions.
 
+The 5-sentence abstract structure in `abstract-skill` is based on the **Farquhar formula**.
+
 The development workflow (planning, phase execution, milestones, verification) is powered by [**get-shit-done**](https://github.com/gsd-build/get-shit-done) — a structured Claude Code workflow framework for shipping software with AI agents.
 
 ---
@@ -198,5 +200,7 @@ Claude Code 会自动克隆仓库并将每个 Skill 目录复制到 `.claude/ski
 本项目的核心写作技能改编自 [**awesome-ai-research-writing**](https://github.com/Leey21/awesome-ai-research-writing) 中的提示词模板——该仓库收录了来自顶级科研机构（MSRA、Seed、上海 AI 实验室）和高校（北大、中科大、上交大）的学术写作提示词。本项目将这些提示词重构为模块化的 Claude Code Skill，配备 YAML 前置配置、共享参考文件库和交互式多步工作流。
 
 改编来源包括：翻译、润色、去 AI 痕迹、模拟审稿、摘要生成、图表标题、逻辑验证、实验分析和可视化建议等技能。投稿信和文献搜索技能为原创扩展。
+
+`abstract-skill` 中的 5 句摘要结构采用 **Farquhar formula**。
 
 本项目的开发工作流（规划、阶段执行、里程碑管理、验证）由 [**get-shit-done**](https://github.com/gsd-build/get-shit-done) 提供支持——一套基于 Claude Code 的结构化 AI 协作开发框架。
