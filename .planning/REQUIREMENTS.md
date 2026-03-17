@@ -28,14 +28,14 @@ Requirements for v2.0 milestone: Repo-to-Paper & Bilingual Enhancement.
 ### UX Fix
 
 - [ ] **UXFIX-01**: paper-polish-workflow uses AskUserQuestion for all structured questions instead of plain dialogue
-- [ ] **UXFIX-02**: skill-conventions.md updated with AskUserQuestion enforcement rule and invocation examples
+- [x] **UXFIX-02**: skill-conventions.md updated with AskUserQuestion enforcement rule and invocation examples
 - [ ] **UXFIX-03**: Skill automatically records user's frequent workflow sequences, saves as project-level config, and offers as recommendations on next invocation
 
 ### Tech Debt
 
-- [ ] **DEBT-01**: skill-conventions.md documents escape hatch for Skills with `required: []`
-- [ ] **DEBT-02**: literature-skill uses capability category "External MCP" instead of vendor-specific "Semantic Scholar MCP"
-- [ ] **DEBT-03**: cover-letter-skill moves CEUS from leaf_hints to required
+- [x] **DEBT-01**: skill-conventions.md documents escape hatch for Skills with `required: []`
+- [x] **DEBT-02**: literature-skill uses capability category "External MCP" instead of vendor-specific "Semantic Scholar MCP"
+- [x] **DEBT-03**: cover-letter-skill moves CEUS from leaf_hints to required
 
 ## Future Requirements
 
@@ -81,11 +81,11 @@ Deferred beyond v2.0.
 | BILN-03 | Phase 13 | Pending |
 | BILN-04 | Phase 17 | Pending |
 | UXFIX-01 | Phase 12 | Pending |
-| UXFIX-02 | Phase 11 | Pending |
+| UXFIX-02 | Phase 11 | Complete |
 | UXFIX-03 | Phase 18 | Pending |
-| DEBT-01 | Phase 11 | Pending |
-| DEBT-02 | Phase 11 | Pending |
-| DEBT-03 | Phase 11 | Pending |
+| DEBT-01 | Phase 11 | Complete |
+| DEBT-02 | Phase 11 | Complete |
+| DEBT-03 | Phase 11 | Complete |
 
 **Coverage:**
 - v2.0 requirements: 18 total

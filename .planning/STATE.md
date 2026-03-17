@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Repo-to-Paper & Bilingual Enhancement
-status: planning
-stopped_at: Phase 11 context gathered
-last_updated: "2026-03-17T01:44:48.218Z"
-last_activity: 2026-03-17 — Roadmap created for v2.0
+status: completed
+stopped_at: Completed 11-01-PLAN.md
+last_updated: "2026-03-17T05:18:47.876Z"
+last_activity: 2026-03-17 — Phase 11 plan 01 completed
 progress:
   total_phases: 8
-  completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
-  percent: 0
+  completed_phases: 1
+  total_plans: 1
+  completed_plans: 1
+  percent: 100
 ---
 
 # Project State
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-03-17)
 ## Current Position
 
 Phase: 11 of 18 (Convention & Tech Debt)
-Plan: — (not yet planned)
-Status: Ready to plan
-Last activity: 2026-03-17 — Roadmap created for v2.0
+Plan: 1 of 1 (Complete)
+Status: Phase 11 complete
+Last activity: 2026-03-17 — Phase 11 plan 01 completed
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
@@ -40,9 +40,9 @@ Progress: [░░░░░░░░░░] 0%
 - Total execution time: 1h 53m
 
 **Velocity (v2.0):**
-- Total plans completed: 0
-- Average duration: —
-- Total execution time: 0
+- Total plans completed: 1
+- Average duration: 3 min
+- Total execution time: 3 min
 
 *Updated after each plan completion*
 
@@ -53,7 +53,12 @@ Progress: [░░░░░░░░░░] 0%
 Decisions are logged in PROJECT.md Key Decisions table.
 v1.0 decisions preserved in `.planning/milestones/v1.0-ROADMAP.md`.
 
-No v2.0 decisions yet.
+- Phase 11: AskUserQuestion enforcement is per-Skill audit, not blanket mandate
+- Phase 11: Bilingual eligibility uses output_contract classification (7 eligible, 4 exempt)
+- Phase 11: Batch mode added as AskUserQuestion exemption alongside direct mode
+- [Phase 11]: AskUserQuestion enforcement is per-Skill audit, not blanket mandate
+- [Phase 11]: Bilingual eligibility uses output_contract classification (7 eligible, 4 exempt)
+- [Phase 11]: Batch mode added as AskUserQuestion exemption alongside direct mode
 
 ### Pending Todos
 
@@ -67,6 +72,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-17T01:44:48.215Z
-Stopped at: Phase 11 context gathered
-Resume file: .planning/phases/11-convention-tech-debt/11-CONTEXT.md
+Last session: 2026-03-17T05:18:36.232Z
+Stopped at: Completed 11-01-PLAN.md
+Resume file: None
