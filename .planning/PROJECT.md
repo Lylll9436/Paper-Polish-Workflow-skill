@@ -31,7 +31,15 @@ Every Skill must produce output that is directly usable in a real paper submissi
 
 ### Active
 
-*(Define next milestone requirements with `/gsd:new-milestone`)*
+## Current Milestone: v2.0 Repo-to-Paper & Bilingual Enhancement
+
+**Goal:** Enable automatic paper draft generation from experiment repositories with top-down structure-first workflow, fix interactive question patterns, and add bilingual paragraph-by-paragraph comparison across Skills.
+
+**Target features:**
+- Repo-to-Paper draft generator: full repo scan → top-down generation (H1→H2→H3→body) with user checkpoints at each level
+- Integrated literature search: Semantic Scholar references collected by H2 stage, saved as ref files with metadata + abstracts
+- Bilingual paragraph-by-paragraph comparison output (English + Chinese)
+- Fix AskUserQuestion usage in paper-polish-workflow (Claude using plain dialogue instead of structured questions)
 
 ### Out of Scope
 
@@ -90,4 +98,4 @@ Every Skill must produce output that is directly usable in a real paper submissi
 | Single-file bilingual README (symmetric halves) | One file is easier to maintain than README.md + README_CN.md | ✓ Good — v1.0 README.md replaces legacy README_CN.md |
 
 ---
-*Last updated: 2026-03-13 after v1.0 milestone*
+*Last updated: 2026-03-17 after v2.0 milestone started*

@@ -1,117 +1,52 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: Paper Polish Workflow
-status: archived
-stopped_at: v1.0 milestone archived 2026-03-13
-last_updated: "2026-03-13T00:00:00.000Z"
-last_activity: 2026-03-13 — v1.0 milestone archived; 11 Skills shipped, 16/16 requirements satisfied
+milestone: v2.0
+milestone_name: Repo-to-Paper & Bilingual Enhancement
+status: defining_requirements
+stopped_at: null
+last_updated: "2026-03-17T00:00:00.000Z"
+last_activity: 2026-03-17 — Milestone v2.0 started
 progress:
-  total_phases: 10
-  completed_phases: 10
-  total_plans: 15
-  completed_plans: 15
-  percent: 100
+  total_phases: 0
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-03-13)
+See: .planning/PROJECT.md (updated 2026-03-17)
 
 **Core value:** Every Skill must produce output that is directly usable in a real paper submission
-**Current focus:** Planning next milestone (run `/gsd:new-milestone`)
+**Current focus:** Defining requirements for v2.0
 
 ## Current Position
 
-Status: v1.0 ARCHIVED — milestone complete
-Last activity: 2026-03-13 — v1.0 milestone archived; 11 Skills shipped, 16/16 requirements satisfied
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-03-17 — Milestone v2.0 started
 
-Progress: [██████████] 100% — v1.0 complete
+Progress: [░░░░░░░░░░] 0%
 
 ## Performance Metrics
 
-**Velocity:**
-- Total plans completed: 7
+**Velocity (v1.0):**
+- Total plans completed: 15
 - Average duration: 16 min
 - Total execution time: 1h 53m
 
-**By Phase:**
-
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 01 | 2 | 1h 34m | 47 min |
-| 02 | 1 | 4m | 4 min |
-| 03 | 1 | 3m | 3 min |
-| 04 | 1 | 3m | 3 min |
-| 05 | 1 | 4m | 4 min |
-| 06 | 1 | 5m | 5 min |
-
-**Recent Trend:**
-- Last 5 plans: 02-01, 03-01, 04-01, 05-01, 06-01
-- Trend: Skill authoring phases complete quickly (markdown-only, no code)
-
-*Updated after each plan completion*
-| Phase 07-abstract-and-experiment-skills P02 | 3 | 2 tasks | 1 files |
-| Phase 07-abstract-and-experiment-skills P01 | 3 | 2 tasks | 1 files |
-| Phase 08-figure-table-and-logic-skills P02 | 2 | 2 tasks | 1 files |
-| Phase 08-figure-table-and-logic-skills P01 | 3 | 2 tasks | 1 files |
-| Phase 09-literature-support-skills P02 | 3 | 2 tasks | 1 files |
-| Phase 09-literature-support-skills P01 | 3 | 2 tasks | 1 files |
-| Phase 09-literature-support-skills P03 | 3 | 2 tasks | 1 files |
-| Phase 10-documentation P01 | 6 | 2 tasks | 1 files |
+*Metrics reset for v2.0 — updated after each plan completion*
 
 ## Accumulated Context
 
 ### Decisions
 
 Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- [Roadmap]: Fine granularity (10 phases) splits foundation into references + conventions, core into 4 individual phases, sections into 2 groups, and support into one combined phase
-- [Roadmap]: Phases 3 and 4 (Translation and Polish) can execute in parallel after Phase 2 since they share no dependencies on each other
-- [Roadmap]: Phase 5 (De-AI) explicitly depends on Phase 1 anti-AI patterns reference, not just Phase 2
-- [Phase 01]: Stable overview path retained for expression references — Avoids breaking downstream Skills and public docs while enabling modular leaf files.
-- [Phase 01]: Expression modules organized by writing scenario — Matches downstream retrieval patterns better than grammar-only grouping and keeps context narrower.
-- [Phase 01]: CEUS path promoted to stable journal contract — Future Skills can target invariant headings without copying journal guidance into prompts.
-- [Phase 01]: Anti-AI library grouped by category and risk tier — Supports lightweight retrieval today and richer De-AI explanation/rewrite flows later.
-- [Phase 02]: Conventions and skeleton kept as separate linked files for independent copyability and maintenance
-- [Phase 02]: Tools listed by capability category rather than vendor-specific names to prevent tool-name lock-in
-- [Phase 02]: ~300 line hard budget with justification required for exceptions
-- [Phase 02]: Four interaction modes defined: interactive, guided, direct, batch
-- [Phase 03]: Default mode set to direct (single-pass) per user locked decision
-- [Phase 03]: Journal template missing triggers refusal, not fallback to general style
-- [Phase 03]: Anti-AI patterns loaded proactively during translation, not just post-processing
-- [Phase 04]: LaTeX annotation format uses % [Polish] Original: prefix for cleanup-safe change tracking
-- [Phase 04]: Guided mode described as shared pattern with step-specific table for line budget efficiency
-- [Phase 04]: All three anti-AI pattern leaves loaded proactively (vocabulary, sentence-patterns, transitions-and-tone)
-- [Phase 05]: Two-phase detect-then-rewrite workflow with user decision between phases (locked decision)
-- [Phase 05]: Domain term protection uses dynamic context inference rather than hardcoded wordlist
-- [Phase 05]: Optional-tier patterns flagged only when appearing 3+ times (repetition threshold)
-- [Phase 05]: De-AI LaTeX annotation uses % [De-AI] Original: prefix, distinct from Polish Skill's % [Polish] Original:
-- [Phase 06]: Chinese translation uses inline blockquote format after each concern, not appended section at end
-- [Phase 06]: Anti-AI patterns NOT loaded by default -- review skill, not detection skill
-- [Phase 06]: Batch mode unsupported since review requires full-paper context; direct mode only
-- [Phase 06]: Report filename convention: {input_filename_without_ext}_review.md for file input
-- [Phase 07]: Phase 2 requires Phase 1 confirmation — user cannot skip to discussion generation
-- [Phase 07]: Literature connections use [CONNECT TO: ...] placeholders rather than AI-inferred citations (CLAUDE.md anti-hallucination principle)
-- [Phase 07]: Evidence sentence must precede interpretation sentence in every Experiment Skill discussion paragraph
-- [Phase 07]: Abstract Skill defaults to direct mode (single-pass) matching Phase 3 locked decision
-- [Phase 07]: Restructure path flags missing formula positions with [MISSING: position-name] rather than silently dropping content
-- [Phase 07]: Output always shows labeled formula version first then clean version after --- separator for verifiability
-- [Phase 08-figure-table-and-logic-skills]: Logic Skill loads no reference files (pure analysis task; no expression pattern leaves, no anti-AI patterns)
-- [Phase 08-figure-table-and-logic-skills]: Argument Chain View table built after issue analysis — Status column derived from AC- issues, prevents optimistic defaults
-- [Phase 08]: Caption Skill skips [MISSING:...] placeholders: missing optional metadata (CRS, legend, scale bar) produces shorter caption without stubs
-- [Phase 08]: Caption Skill geography-conditional Ask Strategy: figure type question gates entire spatial metadata branch (study area, CRS, legend)
-- [Phase 09-literature-support-skills]: Cover letter contribution statement must explicitly reference loaded journal scope — never generic framing
-- [Phase 09-literature-support-skills]: File input produces {input}_cover_letter.md; pasted text outputs in conversation — matches reviewer-simulation-skill convention
-- [Phase 09-literature-support-skills]: Literature Skill MCP unavailability triggers immediate refuse with setup instructions — no partial fallback mode
-- [Phase 09-literature-support-skills]: Single-shot search only: no in-session iterative refinement; user re-triggers with different keywords
-- [Phase 09-literature-support-skills]: BibTeX fields constructed from MCP-returned data exclusively; missing fields omitted rather than filled from prior knowledge
-- [Phase 09-literature-support-skills]: Anti-hallucination verification prompt is mandatory after user paper selection (per CLAUDE.md principle)
-- [Phase 09]: Visualization Skill uses direct mode only and spatial signal keyword scan gates geography chart inclusion; tool hints use inline function names, no code blocks; output is always conversation-only
-- [Phase 10-documentation]: Single README.md with symmetric English/Chinese halves; installation uses Claude Code one-liner; literature-skill annotated with MCP dependency warning
+v1.0 decisions preserved in `.planning/milestones/v1.0-ROADMAP.md`.
 
 ### Pending Todos
 
@@ -119,11 +54,11 @@ None yet.
 
 ### Blockers/Concerns
 
-- Semantic Scholar MCP availability for Literature Skill (Phase 9) needs verification
-- AskUserQuestion tool availability needs confirmation before building interactive Skills
+- Semantic Scholar MCP availability confirmed working (v1.0 literature-skill uses it)
+- AskUserQuestion tool availability confirmed working (v1.0 Skills use it)
 
 ## Session Continuity
 
-Last session: 2026-03-12T15:52:55.104Z
-Stopped at: Completed 10-documentation-10-01-PLAN.md
+Last session: 2026-03-17
+Stopped at: Defining v2.0 requirements
 Resume file: None
