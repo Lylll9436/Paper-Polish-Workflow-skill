@@ -53,6 +53,17 @@ The Skill body uses a semi-templated backbone. All sections below are required u
 - **Direct Skills** (e.g., caption generation): Keep Workflow short. A numbered list of 3-5 steps is enough.
 - **Guided Skills** (e.g., paper polishing): Workflow may use sub-headings for each phase, but must still respect the line budget.
 
+### Bilingual Output Eligibility
+
+Skills are classified as bilingual-eligible based on their `output_contract` type. Skills that produce academic text support bilingual paragraph-by-paragraph comparison; pure analysis, recommendation, and citation Skills are exempt.
+
+| Eligibility | Skills | Reason |
+|-------------|--------|--------|
+| Eligible (default ON) | translation, polish, de-ai, reviewer-simulation, abstract, experiment, logic | Produces academic text where Chinese comparison aids the user |
+| Exempt | caption, cover-letter, visualization, literature | English-only captions, journal-specific format, recommendation-only, BibTeX output |
+
+Eligible Skills support bilingual paragraph-by-paragraph comparison output. Bilingual mode is ON by default; users may opt out. The bilingual format specification is defined in `references/bilingual-output.md` (created in Phase 13).
+
 ---
 
 ## Reference Loading Rules
@@ -70,7 +81,7 @@ Skills must follow the project's stable-entrypoint-plus-leaf-module architecture
 - List all stable entrypoints in frontmatter `references.required`.
 - List likely leaf files in `references.leaf_hints` so maintainers know which narrow modules the Skill expects to use.
 - If a loaded reference does not match the current task, stop and ask the user for clarification rather than silently guessing a fallback.
-- **`required: []` is acceptable** only for self-contained Skills that produce no written academic text and load no local reference files by design. Qualifying cases: pure analysis Skills (e.g., logic checking), pure recommendation Skills (e.g., chart type suggestions), and external-MCP-only Skills (e.g., literature search). The `## References` body section must document why no reference loading is needed.
+- **`required: []` is acceptable** only for self-contained Skills that produce no written academic text and load no local reference files by design. Qualifying cases: pure analysis Skills (e.g., `logic-skill` — logic checking), pure recommendation Skills (e.g., `visualization-skill` — chart type suggestions), and external-MCP-only Skills (e.g., `literature-skill` — literature search). The `## References` body section must document why no reference loading is needed.
 
 ### Reference Paths
 
@@ -175,6 +186,42 @@ The default interaction posture for all Skills is **ask first, then act**.
 
 - In `direct` and `batch` modes, reduce or eliminate pre-questions when the user has provided enough context in the trigger.
 - If all required information is already present in the input, proceed without asking.
+
+### AskUserQuestion Enforcement
+
+Each Skill's `## Ask Strategy` section declares which questions use `AskUserQuestion` and which use plain text. There is no blanket mandate — authors decide per-Skill based on interaction needs.
+
+**Rules:**
+
+- When `AskUserQuestion` is available and the user must choose between 2-4 discrete options, use it.
+- In `direct` mode, Skills skip all `AskUserQuestion` calls entirely. The user chose direct = they want speed. Proceed with defaults and inferred context.
+- In `batch` mode, `AskUserQuestion` calls are also skipped; settings from the first item apply to all subsequent items.
+- When `AskUserQuestion` is unavailable, fall back per the existing rule in `## Fallback Rules > Structured Interaction Unavailable`.
+
+**Good — structured question for multi-option selection:**
+
+```
+AskUserQuestion({
+  question: "Which section should I polish first?",
+  options: [
+    { label: "Abstract", description: "Full abstract rewrite with word count check" },
+    { label: "Introduction", description: "Logic flow and contribution statement" },
+    { label: "Methods", description: "Technical accuracy and reproducibility" }
+  ]
+})
+```
+
+**Bad — plain dialogue for multi-option questions:**
+
+```
+"Which section should I polish first?
+1. Abstract
+2. Introduction
+3. Methods
+Please type the number."
+```
+
+Do not present options as numbered plain text when `AskUserQuestion` is available. The structured tool provides a timed multiple-choice interface that is faster and less error-prone.
 
 ---
 
