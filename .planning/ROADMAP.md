@@ -75,10 +75,10 @@ Plans:
   1. `references/bilingual-output.md` exists defining two format variants: LaTeX comment (for .tex output) and markdown blockquote (for .md output), with examples
   2. The bilingual reference file documents when to use each variant (output format determines variant, not Skill identity)
   3. Existing translation-skill bilingual pattern is verified as consistent with the new specification (no format divergence)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 13-01: TBD
+- [ ] 13-01-PLAN.md — Create bilingual output specification with format variants, opt-out mechanism, and Phase 17 migration checklist
 
 ### Phase 14: Repo-to-Paper Core Structure
 **Goal**: User can point to an experiment repo and get a complete H1/H2/H3 outline with approval checkpoints at each level
@@ -168,7 +168,7 @@ Phases execute in numeric order: 11 -> 12 -> 13 -> 14 -> 15 -> 16 -> 17 -> 18
 | 10. Documentation | v1.0 | 1/1 | Complete | 2026-03-12 |
 | 11. Convention & Tech Debt | 1/1 | Complete    | 2026-03-17 | - |
 | 12. AskUserQuestion Fix | 1/1 | Complete    | 2026-03-17 | - |
-| 13. Bilingual Pattern Standardization | v2.0 | 0/TBD | Not started | - |
+| 13. Bilingual Pattern Standardization | v2.0 | 0/1 | Planned | - |
 | 14. Repo-to-Paper Core Structure | v2.0 | 0/TBD | Not started | - |
 | 15. Literature Integration | v2.0 | 0/TBD | Not started | - |
 | 16. Body Generation & Bilingual Output | v2.0 | 0/TBD | Not started | - |
