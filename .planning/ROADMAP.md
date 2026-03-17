@@ -62,10 +62,10 @@ Plans:
   1. `paper-polish-workflow/SKILL.md` references `AskUserQuestion` (not `mcp_question`) for all structured questions
   2. All tool references in `paper-polish-workflow/SKILL.md` use correct Claude Code tool names (`Read`, `Write`, `Edit`, not `mcp_read`/`mcp_write`)
   3. User invoking paper-polish-workflow receives structured AskUserQuestion prompts (with options) instead of plain dialogue text
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 12-01: TBD
+- [ ] 12-01-PLAN.md — Rewrite SKILL.md with correct tool names, skeleton-compliant structure, and 4-step workflow
 
 ### Phase 13: Bilingual Pattern Standardization
 **Goal**: A single authoritative bilingual output specification exists that all Skills can reference for consistent paragraph-by-paragraph comparison
@@ -167,7 +167,7 @@ Phases execute in numeric order: 11 -> 12 -> 13 -> 14 -> 15 -> 16 -> 17 -> 18
 | 9. Literature & Support Skills | v1.0 | 3/3 | Complete | 2026-03-12 |
 | 10. Documentation | v1.0 | 1/1 | Complete | 2026-03-12 |
 | 11. Convention & Tech Debt | 1/1 | Complete    | 2026-03-17 | - |
-| 12. AskUserQuestion Fix | v2.0 | 0/TBD | Not started | - |
+| 12. AskUserQuestion Fix | v2.0 | 0/1 | Not started | - |
 | 13. Bilingual Pattern Standardization | v2.0 | 0/TBD | Not started | - |
 | 14. Repo-to-Paper Core Structure | v2.0 | 0/TBD | Not started | - |
 | 15. Literature Integration | v2.0 | 0/TBD | Not started | - |
