@@ -102,11 +102,22 @@ Describe when the Skill activates and list example invocations.
 
 ## Workflow
 
+### Step 0: Workflow Memory Check
+
+- Read `.planning/workflow-memory.json`. If file missing or empty, skip to Step 1.
+- Check if the last 1-2 entries form a recognized pattern with the current Skill (e.g., polish -> de-ai) that has appeared >= `workflow_memory.threshold` times (default: 5) in the log. See `skill-conventions.md > Workflow Memory > Pattern Detection` for the full algorithm.
+- If a pattern is found, present recommendation via AskUserQuestion:
+  - Question: "检测到常用流程：[pattern]（已出现 N 次）。是否直接以 direct 模式运行 [current skill]？"
+  - Options: "Yes, proceed" / "No, continue normally"
+- If user accepts: set mode to `direct` for this invocation, skip Ask Strategy questions.
+- If user declines or AskUserQuestion unavailable: continue in normal mode.
+
 ### Step 1: Collect Context
 
 - Load required references.
 - Identify target journal and apply journal-specific constraints.
 - Read the user's input (file or pasted text).
+- **Record workflow:** After validation completes, append `{"skill": "example-skill", "ts": "<ISO timestamp>"}` to `.planning/workflow-memory.json`. If file does not exist, create as `[]` first. If log length >= 50, drop oldest entry before appending.
 
 ### Step 2: [Primary Action]
 

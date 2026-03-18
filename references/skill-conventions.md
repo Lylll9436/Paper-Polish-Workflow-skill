@@ -225,6 +225,33 @@ Do not present options as numbered plain text when `AskUserQuestion` is availabl
 
 ---
 
+## Workflow Memory
+
+All Skills must participate in the project-wide workflow memory system. This system records Skill invocations and detects frequent sequences to offer workflow recommendations.
+
+### Recording
+
+- After the Skill's first-step validation completes (i.e., when the Skill begins producing output, not on invocation), append one entry to `.planning/workflow-memory.json`.
+- Entry format: `{"skill": "<skill-name>", "ts": "<ISO timestamp>"}`
+- Maximum 50 entries retained. If log length >= 50, drop the oldest entry before appending.
+- If the file does not exist, create it as `[]` before appending.
+- If the Skill refuses or exits before completing first-step validation, do NOT write a record.
+
+### Pattern Detection (Step 0)
+
+- At the very start of the Workflow, before any existing Step 1 logic, read `.planning/workflow-memory.json`.
+- Check if the last 1-2 entries form a consecutive pattern with the current Skill that appears >= threshold times (configured in `.planning/config.json` under `workflow_memory.threshold`, default: 5).
+- Pattern types: 2-item (A->B) or 3-item (A->B->C) consecutive chains. Check 3-item patterns first (more specific wins).
+- Count occurrences by scanning the entire log left-to-right: for each position i where log[i..i+N-1] matches the pattern, count +1. Occurrences may share no entries but positions can be non-overlapping.
+- If a matching pattern is found, present a bilingual recommendation via AskUserQuestion:
+  - Question: "检测到常用流程：[pattern]（已出现 N 次）。是否直接以 direct 模式运行 [current skill]？"
+  - Options: "Yes, proceed" (activates direct mode) / "No, continue normally"
+- If the user accepts: skip all Ask Strategy questions and run in `direct` mode.
+- If the user declines or AskUserQuestion is unavailable: proceed in normal mode.
+- Pattern detection must not block the workflow. If the history file is missing, empty, or unparseable, skip silently to Step 1.
+
+---
+
 ## Naming and Discovery
 
 - Skill directory name must match the `name` field in frontmatter.
