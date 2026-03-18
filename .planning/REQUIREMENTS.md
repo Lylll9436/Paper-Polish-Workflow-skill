@@ -29,7 +29,7 @@ Requirements for v2.0 milestone: Repo-to-Paper & Bilingual Enhancement.
 
 - [x] **UXFIX-01**: paper-polish-workflow uses AskUserQuestion for all structured questions instead of plain dialogue
 - [x] **UXFIX-02**: skill-conventions.md updated with AskUserQuestion enforcement rule and invocation examples
-- [ ] **UXFIX-03**: Skill automatically records user's frequent workflow sequences, saves as project-level config, and offers as recommendations on next invocation
+- [x] **UXFIX-03**: Skill automatically records user's frequent workflow sequences, saves as project-level config, and offers as recommendations on next invocation
 
 ### Tech Debt
 
@@ -82,7 +82,7 @@ Deferred beyond v2.0.
 | BILN-04 | Phase 17 | Complete |
 | UXFIX-01 | Phase 12 | Complete |
 | UXFIX-02 | Phase 11 | Complete |
-| UXFIX-03 | Phase 18 | Pending |
+| UXFIX-03 | Phase 18 | Complete |
 | DEBT-01 | Phase 11 | Complete |
 | DEBT-02 | Phase 11 | Complete |
 | DEBT-03 | Phase 11 | Complete |

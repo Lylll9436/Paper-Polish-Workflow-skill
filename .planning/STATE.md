@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Repo-to-Paper & Bilingual Enhancement
 status: completed
-stopped_at: Completed 17-01-PLAN.md
-last_updated: "2026-03-18T13:28:43.804Z"
-last_activity: 2026-03-18 — Phase 17 plan 01 completed
+stopped_at: Completed 18-01-PLAN.md
+last_updated: "2026-03-18T14:35:12.860Z"
+last_activity: 2026-03-18 — Phase 18 plan 01 completed
 progress:
   total_phases: 8
   completed_phases: 7
-  total_plans: 7
-  completed_plans: 7
-  percent: 100
+  total_plans: 9
+  completed_plans: 8
+  percent: 89
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-17)
 
 **Core value:** Every Skill must produce output that is directly usable in a real paper submission
-**Current focus:** Phase 17 - Existing Skills Bilingual Update
+**Current focus:** Phase 18 - Workflow Memory
 
 ## Current Position
 
-Phase: 17 of 18 (Existing Skills Bilingual Update)
-Plan: 1 of 1 (Complete)
-Status: Phase 17 complete
-Last activity: 2026-03-18 — Phase 17 plan 01 completed
+Phase: 18 of 18 (Workflow Memory)
+Plan: 1 of 2 (in progress)
+Status: Plan 18-01 complete, Plan 18-02 remaining
+Last activity: 2026-03-18 — Phase 18 plan 01 completed
 
-Progress: [██████████] 100%
+Progress: [█████████░] 89%
 
 ## Performance Metrics
 
@@ -70,6 +70,7 @@ v1.0 decisions preserved in `.planning/milestones/v1.0-ROADMAP.md`.
 - [Phase 16]: Extracted generation rules to references/body-generation-rules.md to keep SKILL.md under 450 lines
 - [Phase 16]: Moved journals/ceus.md from leaf_hints to required because Step 5 always needs CEUS formatting
 - [Phase 16]: SKILL.md at 448 lines justified by 5-step complexity with generation rules already extracted to reference file
+- [Phase 18]: No deviations from plan - all infrastructure files created exactly as specified
 
 ### Pending Todos
 
@@ -83,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-18T13:23:14.431Z
-Stopped at: Completed 17-01-PLAN.md
+Last session: 2026-03-18T14:35:12.857Z
+Stopped at: Completed 18-01-PLAN.md
 Resume file: None
