@@ -19,7 +19,8 @@ tools:
   - Write
   - Structured Interaction
 references:
-  required: []
+  required:
+    - references/bilingual-output.md
   leaf_hints: []
 input_modes:
   - file
@@ -56,7 +57,7 @@ This Skill reads a full academic paper and verifies logical consistency across i
 
 ### Required (always loaded)
 
-None. Logic verification is a pure analysis task — no expression pattern leaves are needed, and anti-AI patterns are not loaded (consistent with Reviewer Simulation Skill convention). Logic verification is also journal-agnostic; no journal templates are loaded.
+Logic verification loads `references/bilingual-output.md` to govern the Chinese translation format and opt-out behavior. No expression pattern leaves are needed, and anti-AI patterns are not loaded (consistent with Reviewer Simulation Skill convention). Logic verification is also journal-agnostic; no journal templates are loaded.
 
 ### Leaf Hints
 
@@ -124,6 +125,7 @@ None.
 
 ### Step 4 — Write Report
 
+- **Opt-out check:** Before assembling the report, scan the user's original trigger prompt for any of these phrases (case-insensitive, exact phrase match): `english only`, `no bilingual`, `only english`, `不要中文`. If any phrase is detected: omit all `> **[Chinese]** ...` blockquotes from the report -- produce English-only issue entries. If none detected: include Chinese blockquotes as normal.
 - Assemble the two-part report (see Output Contract for locked format).
 - Report presents Part 1 table first (readability), then Part 2 categorized issues.
 - **File input:** Derive output filename as `{input_filename_without_ext}_logic.md`; write using Write tool.
@@ -164,7 +166,7 @@ None.
 **Problem:** [description]
 **Why this matters:** [impact on argument coherence]
 **Suggestion:** [one-sentence directional suggestion]
-> **[中文]** 问题：... 为什么重要：... 建议：...
+> **[Chinese]** 问题：... 为什么重要：... 建议：...
 
 ### Unsupported Claims
 
@@ -184,7 +186,7 @@ None.
 
 **Notes:**
 - Part 1 Argument Chain View table is English only (structural, not language-sensitive).
-- Part 2 issue entries are bilingual: English problem/why/suggestion followed immediately by `> **[中文]** ...` blockquote.
+- Part 2 issue entries are bilingual: English problem/why/suggestion followed immediately by `> **[Chinese]** ...` blockquote.
 - Issue numbering is consecutive within each category (AC-1, AC-2, …; UC-1, UC-2, …).
 
 ## Edge Cases
@@ -246,7 +248,7 @@ User: "Check the logic of my draft: /papers/urban_model.pdf"
 **Problem:** The Introduction proposes a "multi-scale prediction framework," but Methods describes a single-scale gradient boosting model with no multi-scale architecture.
 **Why this matters:** Reviewers will note the mismatch between the stated contribution and the actual implementation, undermining the novelty claim.
 **Suggestion:** Either update the Introduction to describe a single-scale model, or add a multi-scale component to Methods with justification.
-> **[中文]** 问题：引言提出"多尺度预测框架"，但方法章节仅描述单尺度梯度提升模型，无多尺度架构。为什么重要：审稿人会注意到声明贡献与实际实现之间的不一致，削弱新颖性声明。建议：修改引言以描述单尺度模型，或在方法中补充多尺度组件并加以说明。
+> **[Chinese]** 问题：引言提出"多尺度预测框架"，但方法章节仅描述单尺度梯度提升模型，无多尺度架构。为什么重要：审稿人会注意到声明贡献与实际实现之间的不一致，削弱新颖性声明。建议：修改引言以描述单尺度模型，或在方法中补充多尺度组件并加以说明。
 
 ### Unsupported Claims
 
@@ -259,7 +261,7 @@ No issues identified in this category.
 **Problem:** The Introduction uses "urban sprawl prediction framework" while Methods refers to the same system as "urban growth model" without an explicit rename or definition.
 **Why this matters:** Readers and reviewers may interpret these as different systems, reducing clarity.
 **Suggestion:** Choose one term and use it consistently throughout, or introduce the alternative as a defined synonym on first use.
-> **[中文]** 问题：引言使用"城市蔓延预测框架"，方法章节将同一系统称为"城市增长模型"，未作明确说明。为什么重要：读者和审稿人可能将其理解为不同系统，降低论文清晰度。建议：统一使用一个术语，或在首次出现时将替代名称定义为同义词。
+> **[Chinese]** 问题：引言使用"城市蔓延预测框架"，方法章节将同一系统称为"城市增长模型"，未作明确说明。为什么重要：读者和审稿人可能将其理解为不同系统，降低论文清晰度。建议：统一使用一个术语，或在首次出现时将替代名称定义为同义词。
 
 ### Number Contradictions
 
