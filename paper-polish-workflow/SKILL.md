@@ -1,39 +1,6 @@
 ---
 name: paper-polish-workflow
-description: >-
-  Systematic top-down workflow for polishing academic papers.
-  Structure to logic to expression with user confirmation at each step.
-  润色论文、精修论文、学术写作改进。
-triggers:
-  primary_intent: polish academic paper through structured top-down workflow
-  examples:
-    - "Polish my paper section by section"
-    - "润色论文"
-    - "Help me revise my introduction step by step"
-    - "精修论文"
-    - "Guide me through polishing this draft"
-    - "帮我逐步润色这篇论文"
-tools:
-  - Read
-  - Edit
-  - Structured Interaction
-references:
-  required:
-    - references/expression-patterns.md
-  leaf_hints:
-    - references/expression-patterns/introduction-and-gap.md
-    - references/expression-patterns/methods-and-data.md
-    - references/expression-patterns/results-and-discussion.md
-    - references/expression-patterns/conclusions-and-claims.md
-    - references/expression-patterns/geography-domain.md
-    - references/anti-ai-patterns.md
-    - references/journals/ceus.md
-input_modes:
-  - file
-  - pasted_text
-output_contract:
-  - polished_text
-  - change_summary
+description: Systematic top-down workflow for polishing academic papers. Structure to logic to expression with user confirmation at each step.
 ---
 
 ## Purpose
