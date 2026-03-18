@@ -36,7 +36,7 @@ Full details: `.planning/milestones/v1.0-ROADMAP.md`
 - [x] **Phase 15: Literature Integration** - Semantic Scholar batch search at H2 stage with ref file output (completed 2026-03-18)
 - [x] **Phase 16: Body Generation & Bilingual Output** - Section body text with evidence annotations and bilingual comparison (completed 2026-03-18)
 - [x] **Phase 17: Existing Skills Bilingual Update** - Add bilingual output mode to 7 existing Skills (completed 2026-03-18)
-- [ ] **Phase 18: Workflow Memory** - Skill records user workflow sequences and offers recommendations
+- [x] **Phase 18: Workflow Memory** - Skill records user workflow sequences and offers recommendations (completed 2026-03-18)
 
 ## Phase Details
 
@@ -173,4 +173,4 @@ Phases execute in numeric order: 11 -> 12 -> 13 -> 14 -> 15 -> 16 -> 17 -> 18
 | 15. Literature Integration | 1/1 | Complete    | 2026-03-18 | - |
 | 16. Body Generation & Bilingual Output | 1/1 | Complete    | 2026-03-18 | - |
 | 17. Existing Skills Bilingual Update | 1/1 | Complete    | 2026-03-18 | - |
-| 18. Workflow Memory | 1/2 | In Progress|  | - |
+| 18. Workflow Memory | 2/2 | Complete   | 2026-03-18 | - |
