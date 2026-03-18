@@ -78,7 +78,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 13-01-PLAN.md — Create bilingual output specification with format variants, opt-out mechanism, and Phase 17 migration checklist
+- [x] 13-01-PLAN.md — Create bilingual output specification with format variants, opt-out mechanism, and Phase 17 migration checklist (completed 2026-03-18)
 
 ### Phase 14: Repo-to-Paper Core Structure
 **Goal**: User can point to an experiment repo and get a complete H1/H2/H3 outline with approval checkpoints at each level
@@ -171,5 +171,5 @@ Phases execute in numeric order: 11 -> 12 -> 13 -> 14 -> 15 -> 16 -> 17 -> 18
 | 14. Repo-to-Paper Core Structure | 1/1 | Complete    | 2026-03-18 | - |
 | 15. Literature Integration | 1/1 | Complete    | 2026-03-18 | - |
 | 16. Body Generation & Bilingual Output | 1/1 | Complete    | 2026-03-18 | - |
-| 17. Existing Skills Bilingual Update | 1/1 | Complete   | 2026-03-18 | - |
+| 17. Existing Skills Bilingual Update | 1/1 | Complete    | 2026-03-18 | - |
 | 18. Workflow Memory | v2.0 | 0/TBD | Not started | - |
