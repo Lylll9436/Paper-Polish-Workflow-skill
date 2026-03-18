@@ -90,11 +90,10 @@ Plans:
   3. User reviews and approves H2 (subsection) headings with detailed outlines before the Skill proceeds to H3 generation
   4. User reviews and approves H3 headings before the Skill proceeds to body generation
   5. `references/repo-patterns.md` exists as a maintainable reference file containing scan heuristics (file type patterns, section mapping rules) separate from Skill logic
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 14-01: TBD
-- [ ] 14-02: TBD
+- [ ] 14-01-PLAN.md — Create repo-patterns.md reference file and repo-to-paper-skill SKILL.md with 4-step checkpoint workflow
 
 ### Phase 15: Literature Integration
 **Goal**: By H2 completion, all section references are collected via Semantic Scholar and saved as ref files with metadata and abstracts
@@ -169,7 +168,7 @@ Phases execute in numeric order: 11 -> 12 -> 13 -> 14 -> 15 -> 16 -> 17 -> 18
 | 11. Convention & Tech Debt | 1/1 | Complete    | 2026-03-17 | - |
 | 12. AskUserQuestion Fix | 1/1 | Complete    | 2026-03-17 | - |
 | 13. Bilingual Pattern Standardization | 1/1 | Complete    | 2026-03-17 | - |
-| 14. Repo-to-Paper Core Structure | v2.0 | 0/TBD | Not started | - |
+| 14. Repo-to-Paper Core Structure | v2.0 | 0/1 | Not started | - |
 | 15. Literature Integration | v2.0 | 0/TBD | Not started | - |
 | 16. Body Generation & Bilingual Output | v2.0 | 0/TBD | Not started | - |
 | 17. Existing Skills Bilingual Update | v2.0 | 0/TBD | Not started | - |
