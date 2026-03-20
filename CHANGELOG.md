@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] - 2026-03-20
+
+### Added
+- `ppw:team` — Team orchestration mode: split paper into sections and run any eligible Skill (polish, translation, de-ai) via subagents with proof-of-concept quality gate
+- Embedded upstream prompts from [awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) as `## Core Prompt` in 8 Skills (translation, polish, de-ai, logic, visualization, caption, experiment, reviewer-simulation)
+- AI high-frequency vocabulary reference list in ppw:de-ai Core Prompt
+
+### Changed
+- README updated: 14 skills, team orchestration category, PoC explanation, team mode scenario (Chinese + English)
+- Skill count 13 → 14
+
 ## [2.0.0] - 2026-03-19
 
 ### Added
