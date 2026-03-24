@@ -7,8 +7,8 @@
     {
       "name": "paper-polish-workflow",
       "source": {
-        "source": "github",
-        "repo": "Lylll9436/Paper-Polish-Workflow-skill"
+        "source": "url",
+        "url": "https://github.com/Lylll9436/Paper-Polish-Workflow-skill.git"
       },
       "description": "16-Skill Claude Code plugin for academic paper writing, polishing, and submission."
     }
