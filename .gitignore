@@ -19,7 +19,6 @@ node_modules/
 # Claude Code local (dev use only, not part of plugin)
 .claude/
 paper-polish-workflow/
-assets/
 examples/
 .npmrc
 
