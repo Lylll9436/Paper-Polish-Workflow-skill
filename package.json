@@ -1,7 +1,7 @@
 {
   "name": "@lylll9436/paper-polish-workflow-skill",
-  "version": "2.1.0",
-  "description": "A 14-Skill suite (ppw:* namespace) for academic paper writing, repo-to-paper generation, and submission — powered by Claude Code.",
+  "version": "2.2.0",
+  "description": "A 15-Skill suite for academic paper writing, repo-to-paper generation, and submission — powered by Claude Code.",
   "keywords": [
     "claude-code",
     "claude-code-skills",

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.0] - 2026-03-24
+
+### Added
+- `/get-paper` — Search Google Scholar via Chrome DevTools MCP, interactively select papers, and retrieve BibTeX entries. Complements `ppw:literature` (Semantic Scholar) with a Google Scholar alternative.
+
+### Changed
+- Skill count 14 → 15
+- README updated with get-paper in support tools section (Chinese + English)
+
 ## [2.1.0] - 2026-03-20
 
 ### Added

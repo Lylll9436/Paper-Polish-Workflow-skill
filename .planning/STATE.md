@@ -68,7 +68,7 @@ v2.0 decisions preserved in `.planning/milestones/v2.0-ROADMAP.md`.
 
 ### Pending Todos
 
-None yet.
+- [x] ~~Sync Skill prompts from awesome-ai-research-writing repo~~ (done 2026-03-20, commit 94b56fb)
 
 ### Blockers/Concerns
 

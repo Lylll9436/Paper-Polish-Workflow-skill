@@ -5,7 +5,7 @@
 <h1 align="center">Paper Polish Workflow</h1>
 
 <p align="center">
-  <strong>14 项学术论文写作、润色与投稿技能套件 —— 基于 Claude Code 驱动。</strong>
+  <strong>15 项学术论文写作、润色与投稿技能套件 —— 基于 Claude Code 驱动。</strong>
 </p>
 
 <p align="center">
@@ -93,6 +93,7 @@ cp -r node_modules/@lylll9436/paper-polish-workflow-skill/references/ references
 | `/ppw:logic` | `检查我的论文逻辑` | 验证论文各章节的逻辑一致性，追踪论证链，识别逻辑断裂、无支撑声明、术语不一致和数字矛盾。 |
 | `/ppw:literature` | `帮我找关于城市热岛的文献` | 通过 Semantic Scholar MCP 检索学术文献并生成经过验证的 BibTeX 引用。需要 Semantic Scholar MCP。 |
 | `/ppw:visualization` | `帮我选择合适的可视化方式` | 为实验数据推荐合适的图表类型，提供理由和工具提示，地理感知：空间数据时推荐分级地图、空间散点图等。 |
+| `/get-paper` | `get-paper urban perception street view` | 通过 Chrome DevTools MCP 在 Google Scholar 搜索论文，交互式选择后获取 BibTeX 引用。需要 Chrome DevTools MCP。 |
 
 ### 团队协作
 
@@ -244,6 +245,7 @@ All skills use the `ppw:` namespace prefix. Invoke with `/ppw:skill-name`.
 | `/ppw:logic` | `Check the logic of my paper` | Verify logical consistency across paper sections. Traces argument chains and identifies gaps, unsupported claims, terminology inconsistencies, and number contradictions. |
 | `/ppw:literature` | `Find papers about urban heat island` | Search academic literature via Semantic Scholar MCP and generate verified BibTeX entries. Requires Semantic Scholar MCP. |
 | `/ppw:visualization` | `What chart should I use for this data?` | Recommend appropriate chart types for experimental data with rationale and tool hints. Geography-aware: choropleth, spatial scatter, kernel density when spatial data detected. |
+| `/get-paper` | `get-paper urban perception street view` | Search Google Scholar via Chrome DevTools MCP, interactively select papers, and retrieve BibTeX entries. Requires Chrome DevTools MCP. |
 
 ### Team Orchestration
 
